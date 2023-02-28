@@ -18,8 +18,8 @@ export default defineConfig({
   build: {
     modulePreload: false,
     target: 'esnext',
-    minify: true,
-    cssCodeSplit: true
+    minify: false,
+    cssCodeSplit: false
   },
   worker: {
     format: 'es'
