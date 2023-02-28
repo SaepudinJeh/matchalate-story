@@ -30,11 +30,9 @@ export default defineConfig({
     federation(federationPluginOpt)
   ],
   build: {
-    minify: false,
-    sourcemap: true,
+    modulePreload: false,
     target: 'esnext',
-    commonjsOptions: {
-      transformMixedEsModules: true,
-    },
+    minify: false,
+    cssCodeSplit: false
   }
 })
