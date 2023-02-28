@@ -10,7 +10,8 @@ export default defineConfig({
       name: 'myself_story',
       filename: 'remoteEntry.js',
       exposes: {
-        './App': './src/App'
+        './App': './src/App',
+        './assets/images': './src/assets/*'
       },
       shared: ['react', 'react-dom']
     })
