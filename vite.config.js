@@ -10,7 +10,7 @@ const federationPluginOpt = {
   name: 'myself_story',
   filename: 'remoteEntry.js',
   exposes: {
-    './App': 'src/App',
+    './App': './src/App',
   },
   shared: {
     ...Object.entries(pkg.dependencies).reduce((acc, [key, version]) => {
